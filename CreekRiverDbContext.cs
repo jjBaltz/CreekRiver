@@ -33,7 +33,10 @@ public class CreekRiverDbContext : DbContext
         });
         modelBuilder.Entity<UserProfile>().HasData(new UserProfile[]
         {
-            new UserProfile {Id = 1, FirstName = "Richard", LastName = "Allan", Email = "richallan68@yahoo.com"}
+            new UserProfile {Id = 1, FirstName = "Richard", LastName = "Allan", Email = "richallan68@yahoo.com"},
+            new UserProfile {Id = 2, FirstName = "Carlos", LastName = "Hartman", Email = "CarrrlHart@gmail.com"},
+            new UserProfile {Id = 3, FirstName = "Diana", LastName = "Moss", Email = "dMoss74@live.com"},
+            new UserProfile {Id = 4, FirstName = "Ella", LastName = "Carpenter", Email = "elanore.carpenter@icloud.com"}
         });
         modelBuilder.Entity<Reservation>().HasData(new Reservation[]
         {
